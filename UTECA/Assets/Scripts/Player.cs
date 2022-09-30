@@ -1,61 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class Player : MonoBehaviour
 {
-  
-  public int edad = 23;
+  // Variables Globales
   public float velocidad = 4.5f;
-  public bool hasPowers = false;
-  private string Name = "Roberto";
-  int multiFactor = 2;
-  int counter = 0;
-  bool CounterIsGraterThanFive = false;
-  int level = 1;
 
+  // Inventario
+  public bool TenemosLaLlave = false;
 
+  public TMP_Text myTexto;
+  
   // Start is called before the first frame update
   void Start()
   {
-    name = Name;
+    myTexto.text = "wow esto es un texto";
 
-    float result = velocidad * multiFactor;
+    Debug.Log(myTexto);
+    // >  | Mayor
+    // <  | Menor
+    // == | igual
+    // != | Diferentes
+    // >= | Mayor o igual que
+    // <= | Menor o igual que
+
+    if (velocidad >= 5)
+    {
+      Debug.Log("Excediste el limite de velocidad");
+      // Cambiar color
+      gameObject.GetComponent<Renderer>().material.color = new Color(1, 0, 0);
+    }
+    else
+    {
+
+    }
   }
 
   // Update is called once per frame
   void Update()
   {
-    if (level == 1)
-    {
-      // Basic Power
-    }
-    
-    if (level == 5)
-    {
-      // Mid Power
-    }
-    
-    if (level == 10)
-    {
-      // Advance Power
-    }
-
-
-    if (counter >= 5 && CounterIsGraterThanFive == false)
-    {
-      CounterIsGraterThanFive = true;
-    }
-
-    if (CounterIsGraterThanFive == true)
-    {
-      activateComboAnimation();
-    }
   }
 
-
-  public void activateComboAnimation()
+  public Vector3 GetPlayerPositon()
   {
-
+    return transform.position;
   }
+
 }

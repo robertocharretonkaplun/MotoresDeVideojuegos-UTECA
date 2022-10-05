@@ -14,15 +14,15 @@ public class Caja : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    if (player.TenemosLaLlave == true)
-    {
-      Debug.Log("El jugador tiene la llave :D");
-      gameObject.GetComponent<Renderer>().material.color = new Color(1, 0, 0);
-    }
-    else
-    {
-      Debug.Log("El jugador no tiene la llave :(");
-      gameObject.GetComponent<Renderer>().material.color = new Color(0, 0, 0);
-    }
+    //if (player.TenemosLaLlave == true)
+    //{
+    //  Debug.Log("El jugador tiene la llave :D");
+    //  gameObject.GetComponent<Renderer>().material.color = new Color(1, 0, 0);
+    //}
+    //else
+    //{
+    //  Debug.Log("El jugador no tiene la llave :(");
+    //  gameObject.GetComponent<Renderer>().material.color = new Color(0, 0, 0);
+    //}
   }
 }

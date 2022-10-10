@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/PunchOutExample.unity
+    guid: 3c1950ffa1f5f564d90dd14196a7dfd1
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Arkanoid.unity
+    guid: 6c90054eaf876ac49b1a15355b3e994d
+  - enabled: 1
+    path: Assets/Scenes/HexGame.unity
+    guid: 2be78be17fbe9164b81034887a4bf17a
+  - enabled: 1
+    path: Assets/Scenes/TileMapTest.unity
+    guid: 6244a723fadbda049bd79766bd28390b
   m_configObjects: {}

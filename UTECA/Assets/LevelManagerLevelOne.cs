@@ -68,4 +68,9 @@ public class LevelManagerLevelOne : MonoBehaviour
     ScorePlayer.text = PlayerScoreValue.ToString();
     ScoreEnemy.text = EnemyScoreValue.ToString();
   }
+
+  public void CloseGame()
+  {
+    Application.Quit();
+  }
 }

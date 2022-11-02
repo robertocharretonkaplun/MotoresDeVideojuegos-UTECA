@@ -15,6 +15,7 @@ public class Gasparin : MonoBehaviour
 {
   public int level = 0;
   public LEVEL levelenum;
+  public int health = 0;
   // Start is called before the first frame update
   void Start()
   {

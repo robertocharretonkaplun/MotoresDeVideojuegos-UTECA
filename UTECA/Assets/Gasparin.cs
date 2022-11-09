@@ -13,9 +13,10 @@ public enum LEVEL
 
 public class Gasparin : MonoBehaviour
 {
-  public int level = 0;
+  public int level = 10;
   public LEVEL levelenum;
   public int health = 0;
+  public P2LevelManager manager;
   // Start is called before the first frame update
   void Start()
   {
@@ -26,6 +27,16 @@ public class Gasparin : MonoBehaviour
   void Update()
   {
 
+  }
+
+  public void UpgrateLevel()
+  {
+    if (level == 0)
+    {
+      level = 10;
+      manager.score++;
+    }
+    level--;
   }
 
   private void OnCollisionEnter2D(Collision2D collision)

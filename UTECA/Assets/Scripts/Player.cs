@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
+/*
+ * 
 public class Player : MonoBehaviour
 {
   // Variables Globales
@@ -71,3 +74,6 @@ public class Player : MonoBehaviour
     Debug.Log("Se aplico Daño: " + health);
   }
 }
+
+
+*/

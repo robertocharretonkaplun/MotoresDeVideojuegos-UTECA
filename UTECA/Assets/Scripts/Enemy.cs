@@ -8,7 +8,7 @@ public enum Actions
   MOVE_LEFT,
   MOVE_RIGHT,
   FIGHT,
-  ATTACK1,
+  ATTACK_1,
   COVER
 }
 
@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
   {
 
   }
-  
+
   public void ApplyDamage()
   {
     health -= 20;
@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour
     player.gameObject.GetComponent<ColliderScript>().health -= 20;
     player.gameObject.GetComponent<Renderer>().material.color = Color.red;
     yield return new WaitForSeconds(.5f);
-    actions = Actions.ATTACK1;
+    actions = Actions.ATTACK_1;
     Debug.Log("Enemy Attack:" + actions);
     player.gameObject.GetComponent<Renderer>().material.color = Color.white;
     LevelManagerLevelOne.instance.EnemyScoreValue += 1;

@@ -9,7 +9,7 @@ public enum PlayerActions
   MOVE_LEFT,
   MOVE_RIGHT,
   FIGHT,
-  ATTACK1,
+  ATTACK_1,
   COVER
 }
 public class ColliderScript : MonoBehaviour
@@ -52,7 +52,7 @@ public class ColliderScript : MonoBehaviour
   {
     Debug.Log("Player Attacking");
     Enemy.instance.GetComponent<Renderer>().material.color = Color.cyan;
-    PlayerAction = PlayerActions.ATTACK1;
+    PlayerAction = PlayerActions.ATTACK_1;
     Enemy.instance.ApplyDamage();
     yield return new WaitForSeconds(1f);
     Debug.Log("Player Attack:" + PlayerAction);
@@ -69,7 +69,7 @@ public class ColliderScript : MonoBehaviour
     }
     if (Input.GetKey(KeyCode.E))
     {
-      PlayerAction = PlayerActions.ATTACK1;
+      PlayerAction = PlayerActions.ATTACK_1;
       //Debug.Log("Gancho Derecho");
       StartCoroutine(Attack1(Enemy.instance.gameObject));
     }
